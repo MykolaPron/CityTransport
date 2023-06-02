@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "CityTransport",
-    "slug": "CityTransport",
+    "slug": "city-transport",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -21,10 +21,29 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.mykolapron.citytransport",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC-jCzCf0njv0RjrmlEY43YlPPjN0K-ews"
+        }
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "91c4db69-a044-46fd-9d35-d602b100d720"
+      }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ]
   }
 }
